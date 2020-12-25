@@ -47,25 +47,25 @@ class Counting_legs(Animals):
             print(f"My {self.anymal_type} can fly really hight!")
         else: print(f"My {self.anymal_type} have {self.legs} legs")
 
-# m_anymal = Animals('dog', 'petty', '16')
-# m_anymal.my_animal()
-#
-# dog = Dog('dog', 'petty', '10')
-# dog.my_animal()
-# dog.voice()
+m_anymal = Animals('dog', 'petty', 16)
+m_anymal.my_animal()
 
-# fly = Fly('bird', 'carol', '4', '30')
-# fly.my_animal()
-# fly.wings()
+dog = Dog('dog', 'petty', 10)
+dog.my_animal()
+dog.voice()
 
-# wizzard = Restoration('wizzard', 'blow', '1')
-# wizzard.my_animal()
-# wizzard.wizzard_repair()
+fly = Fly('bird', 'carol', 4, 30)
+fly.my_animal()
+fly.wings()
 
-# frog = Frog('frog', 'carol', 1 , 25, 19)
-# frog.my_animal()
-# frog.legs_length()
+wizzard = Restoration('wizzard', 'blow', 1)
+wizzard.my_animal()
+wizzard.wizzard_repair()
 
-legs = Counting_legs('bird', 'piko',3 , 3)
+frog = Frog('frog', 'carol', 1, 25, 19)
+frog.my_animal()
+frog.legs_length()
+
+legs = Counting_legs('bird', 'piko', 3, 3)
 legs.my_animal()
 legs.leg()
