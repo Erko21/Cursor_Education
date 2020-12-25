@@ -66,6 +66,6 @@ frog = Frog('frog', 'carol', 1, 25, 19)
 frog.my_animal()
 frog.legs_length()
 
-legs = Counting_legs('bird', 'piko', 3, 3)
+legs = Counting_legs('bird', 'piko', 3, 4)
 legs.my_animal()
 legs.leg()
