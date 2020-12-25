@@ -13,7 +13,7 @@ class Dog(Animals):
 
 class Fly(Animals):
     def __init__(self,anymal_type, name , age , wing_size):
-        super().init(anymal_type, name , age)
+        super().__init__(anymal_type, name , age)
         self.anymal_type = anymal_type
         self.name = name
         self.age = age
@@ -28,7 +28,7 @@ class Restoration(Animals):
 
 class Frog(Animals):
     def __init__(self, anymal_type, name, age, full_length, body_length):
-        super().init(anymal_type, name, age)
+        super().__init__(anymal_type, name, age)
         self.full_length = full_length
         self.body_length = body_length
 
@@ -38,7 +38,7 @@ class Frog(Animals):
 
 class Counting_legs(Animals):
     def __init__(self, anymal_type, name, age, legs):
-        super().init(anymal_type, name, age)
+        super().__init__(anymal_type, name, age)
         self.legs = legs
     def leg(self):
         if self.legs == 4:
@@ -66,6 +66,6 @@ class Counting_legs(Animals):
 # frog.my_animal()
 # frog.legs_length()
 
-legs = Counting_legs('bird', 'piko',3, 2)
+legs = Counting_legs('bird', 'piko',3, 3)
 legs.my_animal()
 legs.leg()
