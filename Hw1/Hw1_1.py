@@ -66,6 +66,6 @@ class Counting_legs(Animals):
 # frog.my_animal()
 # frog.legs_length()
 
-legs = Counting_legs('bird', 'piko',3, 3)
+legs = Counting_legs('bird', 'piko',3 , 3)
 legs.my_animal()
 legs.leg()
