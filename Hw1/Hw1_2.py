@@ -1,19 +1,19 @@
-# class Laptop():
-#     def __init__(self):
-#         hard_disk_1 = Hard_disk("These are files in hard disk 1")
-#         hard_disk_2 = Hard_disk("These are files in hard disk 2")
-#         self.hard_disks = [hard_disk_1, hard_disk_2]
-#
-#     def show_files(self):
-#         print(self.hard_disks)
-#         for disk in self.hard_disks :
-#             print(disk.files)
-#
-# class Hard_disk():
-#     def __init__(self, files):
-#         self.files = files
-# disk = Laptop()
-# disk.show_files()
+class Laptop():
+    def __init__(self):
+        hard_disk_1 = Hard_disk("These are files in hard disk 1")
+        hard_disk_2 = Hard_disk("These are files in hard disk 2")
+        self.hard_disks = [hard_disk_1, hard_disk_2]
+
+    def show_files(self):
+        print(self.hard_disks)
+        for disk in self.hard_disks :
+            print(disk.files)
+
+class Hard_disk():
+    def __init__(self, files):
+        self.files = files
+disk = Laptop()
+disk.show_files()
 
 
 
