@@ -36,6 +36,17 @@ class Frog(Animals):
         length = self.full_length - self.body_length
         print(f"My {self.anymal_type} has {length} santimeters legs!")
 
+class Counting_legs(Animals):
+    def __init__(self, anymal_type, name, age, legs):
+        super().__init__(anymal_type, name, age)
+        self.legs = legs
+    def legs(self):
+        if self.legs() == 4:
+            print(f"My {self.anymal_type} can run really fast!")
+        elif self.legs() == 2 :
+            print(f"My {self.anymal_type} can fly really hight!")
+        else: print(f"My {self.anymal_type} have {self.legs} legs")
+
 # m_anymal = Animals('dog', 'petty', '16')
 # m_anymal.my_animal()
 #
@@ -51,6 +62,10 @@ class Frog(Animals):
 # wizzard.my_animal()
 # wizzard.wizzard_repair()
 
-frog = Frog('frog', 'carol', 1 , 25, 19)
-frog.my_animal()
-frog.legs_length()
+# frog = Frog('frog', 'carol', 1 , 25, 19)
+# frog.my_animal()
+# frog.legs_length()
+
+legs = Counting_legs('bird', 'piko','3','2')
+legs.my_anymal()
+legs.legs()
