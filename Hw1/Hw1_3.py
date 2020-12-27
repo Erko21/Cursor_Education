@@ -1,10 +1,9 @@
+Meta1 = type("Meta1", (), {'sur_name':'Kedesh' })
+Meta2 = type("Meta2", (Meta1,), {})
 
+class User(Meta2):
+    pass
+user = User()
 
-Person = type('Person', (), {'age': 21})
-P = Person()
-print(P)
-print(Person)
-inst = isinstance(P, Person)
-print(inst)
-print(P.age)
-
+print(user)
+print(user.sur_name)
