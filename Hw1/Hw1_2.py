@@ -1,3 +1,4 @@
+#Composition
 class Laptop():
     def __init__(self):
         hard_disk_1 = Hard_disk("These are files in hard disk 1")
@@ -18,7 +19,7 @@ disk.show_files()
 
 
 
-
+#aggregation
 class Guitar():
     def __init__(self, strings):
         self.strings = strings
@@ -31,5 +32,7 @@ class Strings():
         self.strings_type = strings_type
 
 strings = Strings('metal')
+metal = Guitar(strings)
+metal.play()
 strings_type = strings.strings_type
 print(strings_type)
